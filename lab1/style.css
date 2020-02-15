@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://background-tiles.com/overview/red/patterns/large/1012.png);
+}
+
+.wrapper{
+    font-family: 'Comfortaa', cursive;
+    padding: 25px;
+    margin: auto auto;
+    max-width: 60%;
+    background-color: #f4ff5bef;
+    box-shadow: 3px 6px 10px black;
+    font-size: 16pt;
+    border-radius: 20px;
+}
+
+#title{
+    text-align: center;
+}
+
+#list{
+text-align: left;
+
+}
+
+#list:hover{
+    cursor: pointer;
+    font-size: 17pt;
+    font-style: italic;
+}
+
+.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 15px;
+}
+
+table img{
+    width: 100%;
+}
+
+table {
+    display: table;
+    width: 100%;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 800px){
+    .wrapper{
+        max-width: 100%;
+    }
+}
