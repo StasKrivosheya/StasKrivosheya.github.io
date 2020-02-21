@@ -65,7 +65,6 @@ body{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-/**/
 
 #title{
     text-align: center;
@@ -93,6 +92,15 @@ body{
     margin-right: auto;
     width: 70%;
     border-radius: 15px;
+}
+
+#button-main{
+    display: block;
+}
+
+#top-button{
+    position: fixed;
+
 }
 
 .img-link img{
