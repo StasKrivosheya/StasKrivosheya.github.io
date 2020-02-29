@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("https://background-tiles.com/overview/red/patterns/large/1012.png");
+    margin: 0;
+}
+
+#wrapper {
+    font-family: 'Nunito';
+    width: 75%;
+    margin: 10px auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 230, 0);
+    padding: 10px;
+}
+
+#main {
+    display: flex;
+}
+
+#content {
+    flex-grow: 1;
+    background: rgb(230, 221, 141);
+    padding: 25px;
+    text-align: justify;
+}
+
+#sidebar {
+    flex-shrink: 0;
+    flex-basis: 30%;
+    background: rgb(221, 208, 87);
+    text-align: center;
+    padding: 10px;
+}
+
+.side-button {
+    display: block;
+    background-color: rgb(255, 230, 0);
+    width: 70%;
+    border-radius: 5px;
+    margin: 6px auto;
+    padding: 6px 0;
+    color: black;
+    text-decoration: none;
+    transition: background-color 0.7s, box-shadow 0.7s;
+}
+
+.side-button:hover {
+    background-color: orange;
+    font-weight: bold;
+    box-shadow: -3px 5px 10px 1px black;
+}
+
+#footer {
+    background: rgb(161, 149, 42);
+    text-align: center;
+}
+
+#gallery{
+    display: flex;
+}
+
+.photo-col img{
+    display: block;
+    width: 100%;
+    background-color: #ccd63e63;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.photo-col{
+    flex-basis: 100%;
+    margin: 0 5px;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 800px) {
+    #wrapper {
+        width: 100%;
+        margin: 0;
+    }
+
+    #main {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        flex-basis: auto;
+        order: -1;
+    }
+
+    #gallery{
+        flex-wrap: wrap;
+    }
+}
