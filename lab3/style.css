@@ -87,7 +87,16 @@ body{
     text-align: center;
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (min-device-width: 810px) and (max-device-width: 960px){
+    body{
+        font-size: smaller;
+    }
+    #gallery h1{
+        font-size: small;
+    }
+}
+
+@media screen and (max-device-width: 809px) {
     #wrapper {
         width: 100%;
         margin: 0;
