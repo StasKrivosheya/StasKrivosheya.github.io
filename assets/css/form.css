@@ -1,0 +1,43 @@
+input {
+    background-color: #fff9eb;
+    outline: none;
+    border: solid black 1px;
+}
+
+select {
+    border: solid black 1px;
+    background-color: #fff9eb;
+    outline: none;
+}
+
+textarea {
+    background-color: #fff9eb;
+    width: 510px;
+    max-width: 100%;
+    min-height: 50px;
+    outline: none;
+    border: solid black 1px;
+}
+
+.form-btn {
+    width: 25%;
+    margin-left: 10px;
+    padding: 10px 5%;
+    border: 0;
+    border-radius: 30px;
+    background: linear-gradient(to right, #fff7b0, #FFDB15);
+    cursor: pointer;
+    outline: none;
+    transition: .5s;
+}
+
+.form-btn:hover {
+    background: linear-gradient(to top, #fff7b0, #FFDB15);
+    box-shadow: -2px 4px 10px 1px black;
+}
+
+@media screen and (max-width: 600px) {
+    .form-btn {
+        width: 40%;
+    }
+}
