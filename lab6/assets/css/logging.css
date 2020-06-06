@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(252, 251, 245, 0.4), rgba(111, 117, 19, 0.4)), url(../images/login-background.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#link{
+    width: 128px;
+    margin: auto;
+    text-align: center;
+}
+
+#link img{
+    border-bottom: 1px solid black;
+    opacity: 0.5;
+    transition: ease-in-out .3s;
+}
+
+#link img:hover{
+    opacity: 1;
+}
+
+.form-box{
+    max-width: 350px;
+    height: 400px;
+    position: relative;
+    margin: 10px auto auto auto;
+    padding: 10px 10px 0 10px;
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: rgba(255, 220, 21, 0.8);
+}
+
+.switcher-box{
+    width: 200px;
+    margin: 30px auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0 0 20px 9px rgba(255, 248, 220, 0.6);
+    outline: 0;
+}
+
+.toggle-button{
+    width: 50%;
+    position: relative;
+    background: transparent;
+    border: 0;
+    padding: 10px 5%;
+    cursor: pointer;
+    outline: none;
+}
+
+#switcher{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to right, #ff5c10, #ffad06);
+    transition: .5s;
+    outline: none;
+}
+
+.input-group{
+    position: absolute;
+    top: 110px;
+    width: 80%;
+    transition: .5s;
+}
+
+.input-field::placeholder{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.input-field{
+    background: transparent;
+    width: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 1px solid black;
+    padding: 10px 0;
+    outline: none;
+}
+
+.form-btn{
+    display: block;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 10px 5%;
+    border: 0;
+    border-radius: 30px;
+    background: linear-gradient(to left, #ff5c10, #ffad06);
+    cursor: pointer;
+    outline: none;
+}
+
+#login{
+    /* (350px -  350*0.8) / 2 */
+    left: 35px;
+}
+
+#register{
+    /* offset = 35 * 2 + 350 - 2 * 10 (10 - padding) */
+    left: 400px;
+}
+
+#footer{
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    font-size: 9pt;
+    background-color: rgba(0, 0, 0, 0.800);
+    color: cornsilk;
+    text-align: center;
+    border-radius: 0 0 30px 30px;
+    padding: 10px;
+}
+
+#div-from-js{
+    padding: 10px;
+    font-family: "Times New Roman", serif;
+
+}
+
+@media screen and (max-width: 375px)
+{
+    .form-box{
+        width: 90%;
+    }
+
+    #footer{
+        font-size: 8pt;
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+/* if there's no enough height space for the logo & form */
+@media screen and (max-height: 565px)
+{
+    .wrapper{
+        height: initial;
+        background-image: linear-gradient(to bottom, rgba(252, 251, 245, 0.4), rgba(111, 117, 19, 0.4)), url(../images/login-background.jpg);
+    }
+    
+    .form-box{
+        max-width: 350px;
+        margin-bottom: 10px;
+    }
+}
